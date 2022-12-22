@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="split">
+            <div class="left logo">
+                <p><a href="index.html">Härnösand Färdtjänst</a></p>
+            </div>
+            <div class="right menudiv">
+                <img class="search" src="images/icons8-search-30.png" alt="searchicon">
+                <img class="menu" src="images/icons8-menu-30.png" alt="hamburgarmeny">
+
+            </div>
+        </div>
+    </header>
+    <section class="pageName">
+        <h1>Boka Återresa</h1>
+    </section>
+    <div class="page">
+        <section class="goback">
+            <ul>
+                <li><a href="book.html">Startsida /</a></li>
+                <li><a href="book.html">Boka Resa /</a></li>
+                <li><a href="backtrip.html">Boka Återresa</a></li>
+            </ul>
+        </section>
+        <section class="book">
+            <h2>Återresa</h2>
+            <form action="confirm.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="from">Från:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="from" name="from" placeholder="Från...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="to">Till:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="to" name="to" placeholder="Till...">
+                    </div>
+                </div>
+                <div class="row split">
+                    <div class="col-25">
+                        <label for="from">Tid:</label>
+                        <div class="col-75">
+                            <input type="time" id="time" name="time">
+                        </div>
+
+                    </div>
+                    <div class="col-25">
+                        <label for="from">Datum:</label>
+                        <div class="col-75">
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="firstAvailable" name="firstAvailable" value="firstAvailable">
+                    <label for="firstAvailable">Första ledig tid</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="wheelchair" name="wheelchair" value="wheelchair">
+                    <label for="wheelchair">Rullstolsanpassning</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="visuallyImpaired" name="visuallyImpaired" value="visuallyImpaired">
+                    <label for="visuallyImpaired">Synnedsättning</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="fellowTraveller" name="fellowTraveller" value="fellowTraveller">
+                    <label for="fellowTraveller">Medresenär</label>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Boka Resa">
+                </div>
+
+            </form>
+
+
+
+        </section>
+    </div>
+    <footer>
+        <div class="split">
+            <div class="split_left_footer">
+                <div class="split">
+                    <div class="split_left_arrow">
+                        <ul>
+                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
+                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
+                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
+                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
+
+                        </ul>
+                    </div>
+                    <div class="split_right_arrow">
+                        <ul>
+                            <li>
+                                <h4><a href="myTrips.html">Mina resor</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="info.html">Information</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="contact.html">Kontakta oss</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="">Tillgänglighetsredogörelse</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="split_right_footer">
+                <h4>Kundservice</h4>
+                <p>Helgfri vardag klockan 7-20 <br> 010 - 00 00 00</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,449 @@
+        @import url("normalize.css;");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin-inline: auto;
+        }
+        
+        header {
+            background-color: #02A3E8;
+            margin-top: 0;
+            text-align: left;
+            min-height: 5em;
+        }
+        
+        a {
+            color: #000;
+        }
+        /*alla p-element*/
+        
+        p {
+            letter-spacing: 1px;
+        }
+        /*loggan*/
+        
+        .logo {
+            margin-left: 3%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+        /*inställningar för sidrubrik*/
+        
+        .pageName {
+            position: relative;
+            min-height: 2em;
+            height: 5vh;
+            background-color: rgba(167, 167, 167, 1);
+        }
+        
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2em;
+        }
+        /*backgrunden för innehållet*/
+        
+        .page {
+            background-color: rgba(227, 227, 227, 1);
+            min-height: 73vh;
+        }
+        /*breadcrums*/
+        
+        .goback {
+            text-align: left;
+            padding: 0.5em;
+        }
+        /*lista för förgående sida*/
+        
+        .goback li {
+            display: inline-block;
+        }
+        /*länkar till förgående sida*/
+        
+        .goback a {
+            text-decoration: none;
+        }
+        /*delar headern i två delar*/
+        
+        .split {
+            display: flex;
+            height: 12vh;
+        }
+        /*vänster del headern*/
+        
+        .left {
+            flex: 2.2 0 0;
+        }
+        /*höger del headern*/
+        
+        .right {
+            flex: 0.8 0 0;
+        }
+        /*logga in text headern*/
+        
+        .lockText {
+            text-align: center;
+            font-size: 0.8em;
+        }
+        /*lås-ikonen header*/
+        
+        .lock {
+            margin-top: 1.1em;
+            width: 37%;
+            display: block;
+            margin-inline: auto;
+        }
+        
+        .menudiv {
+            display: flex;
+            justify-content: center;
+        }
+        /*meny-ikon header*/
+        
+        .menu {
+            margin: auto;
+            padding-right: 0.5em;
+        }
+        /*search-ikon header*/
+        
+        .search {
+            margin: auto;
+            width: 27%;
+            height: 27%;
+        }
+        
+        footer {
+            background-color: #02A3E8;
+            min-height: 5em;
+            height: 12vh;
+            margin-bottom: 0;
+            width: 100%;
+        }
+        /*design för pil-bilderna*/
+        
+        .arrow {
+            rotate: -135deg;
+            width: 80%;
+            margin-left: 0.2em;
+        }
+        /*vänsta delen för pilarna*/
+        
+        .split_left_arrow {
+            flex: 0.6 0 0;
+            margin-top: 0.6em;
+        }
+        /*höger del för länkar*/
+        
+        .split_right_arrow {
+            flex: 5 0 0;
+            height: 1em;
+        }
+        /*ul för länkar*/
+        
+        .split_right_arrow ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 0.6em;
+        }
+        /*alla li-element för länkarna*/
+        
+        .split_right_arrow li {
+            margin-bottom: 0.4em;
+            font-size: 0.8em;
+        }
+        /*länkarna */
+        
+        .split_right_arrow a {
+            color: #000;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        /*vänstra delen av footern*/
+        
+        .split_left_footer {
+            flex: 1.3 0 0;
+        }
+        /*högra delen av footern*/
+        
+        .split_right_footer {
+            margin-top: 1.5em;
+            flex: 1.2 0 0;
+            text-align: center;
+        }
+        /*Rubrik till höger*/
+        
+        .split_right_footer h4 {
+            font-size: 0.9em;
+        }
+        /*text til höger*/
+        
+        .split_right_footer p {
+            font-size: 0.7em;
+        }
+        /*startsidan*/
+        
+        .firstpage {
+            padding-top: 5em;
+            text-align: center;
+        }
+        
+        .firstpage h2 {
+            font-size: 1.1em;
+            margin-bottom: 2em;
+        }
+        /*alla knappar på startsidan*/
+        
+        .firstpage button {
+            width: 15em;
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+            margin-bottom: 2em;
+            font-size: 0.85em;
+            background-color: #02A3E8;
+            border-radius: 5px;
+        }
+        /*alla p-element under startsidan*/
+        
+        .firstpage p {
+            width: 80%;
+            margin-inline: auto;
+            padding-top: 3em;
+        }
+        /*login-sidan*/
+        
+        .logIn {
+            width: 80%;
+            margin-inline: auto;
+            list-style: none;
+            text-align: right;
+            margin-right: 1em;
+            margin-top: 0.5em;
+        }
+        
+        .login h2 {
+            font-size: 1.1em;
+            margin-top: 3em;
+            margin-bottom: 1.6em;
+            text-align: center;
+        }
+        /*design för alla formulär*/
+        /* Style inputs, select elements and textareas */
+        
+        input[type=text],
+        input[type=password],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.8em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        
+        input[type=password] {
+            margin-bottom: 2em;
+        }
+        /* Style the label to display next to the inputs */
+        
+        label {
+            padding: 0.5em 0.5em 0.2em 0;
+            display: inline-block;
+        }
+        /* Style the submit button */
+        
+        input[type=submit] {
+            background-color: #02A3E8;
+            color: rgb(0, 0, 0);
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            margin-bottom: 2em;
+            font-size: 0.9em;
+        }
+        /* Floating column for inputs: 75% width */
+        
+        .col-75 {
+            float: left;
+            width: 60%;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        
+        .login h3 {
+            font-size: 1em;
+            margin-bottom: 0.5em;
+        }
+        /*alla p-element på login-sidan*/
+        
+        .login p {
+            text-align: left;
+            font-size: 0.9em;
+        }
+        
+        #divForm {
+            display: block;
+            text-align: center;
+        }
+        /*bokningssidan*/
+        
+        .book {
+            width: 80%;
+            margin-inline: auto;
+        }
+        
+        .book h2 {
+            margin-top: 1em;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        /*inställningar för datum*/
+        
+        imput[type=date] {
+            width: 100%;
+            padding: 1em;
+        }
+        /*inställningar för chechboxes*/
+        
+        input[type=checkbox] {
+            margin-bottom: 1.3em;
+            width: 1em;
+            height: 1em;
+        }
+        
+        #backtrip {
+            margin-top: 1em;
+        }
+        
+        #to {
+            margin-bottom: 1em;
+        }
+        /*marginal neråt till boka-knapp*/
+        
+        #fellowTraveller {
+            margin-bottom: 2em;
+        }
+        /*confirm-sidan*/
+        
+        .confirm {
+            width: 85%;
+            margin-inline: auto;
+        }
+        /*alla listor på confirm-sidan*/
+        
+        .confirm li {
+            display: inline-block;
+        }
+        /*delar desinatin och tid/datum*/
+        
+        #split_confirm_left {
+            flex: 2.2 0 0;
+        }
+        
+        #split_confirm_right {
+            flex: 1 0 0;
+        }
+        /*Bekräfta bokning text*/
+        
+        .confirm h2 {
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-size: 1.2em;
+        }
+        
+        .confirm h3 {
+            text-align: center;
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+        }
+        /*resan till*/
+        
+        .firstLeft p {
+            margin-top: 0.4em;
+        }
+        
+        .firstLeft li:nth-child(2) {
+            margin-bottom: 1.5em;
+        }
+        /*återresa adresser*/
+        
+        .secondLeft p {
+            margin-top: 0.4em;
+        }
+        /*sätter distans neråt mellan rea och återresa*/
+        
+        .firstLiRight {
+            margin-bottom: 1.5em;
+        }
+        /*sätter distans neråt mellan rea och återresa*/
+        
+        .firstLiRight img {
+            padding-top: 0.3em;
+        }
+        /*button div*/
+        
+        #button {
+            text-align: center;
+        }
+        /*Nej-knapp*/
+        
+        #noButton {
+            background-color: rgba(229, 62, 62, 1);
+            margin-right: 0.5em;
+        }
+        /*ja-knapp*/
+        
+        #yesButton {
+            background-color: rgba(61, 189, 40, 1);
+            margin-left: 0.5em;
+        }
+        /*Alla knappar på confirm-sidan*/
+        
+        .confirm button {
+            margin-top: 6em;
+            padding: 0.6em;
+            width: 40%;
+            border-radius: 5px;
+            font-size: 1em;
+            position: relative;
+        }
+        /*Alla bilder på knapparna*/
+        
+        .confirm button img {
+            width: 15%;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
