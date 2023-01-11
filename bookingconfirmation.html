@@ -23,75 +23,40 @@
         </div>
     </header>
     <section class="pageName">
-        <h1>Boka Återresa</h1>
+        <h1>Bokningsbekräftelse</h1>
     </section>
     <div class="page">
-        <section class="goback">
+        <nav class="goback">
             <ul>
-                <li><a href="book.html">Startsida /</a></li>
+                <li><a href="index.html">Startsida /</a></li>
                 <li><a href="book.html">Boka Resa /</a></li>
-                <li><a href="backtrip.html">Boka Återresa</a></li>
+                <li><a href="bookingconfirmation.html">Bokningsbekräftelse</a></li>
             </ul>
-        </section>
-        <section class="book">
-            <h2>Återresa</h2>
-            <form action="confirm.html">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="from">Från:</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="from" name="from" placeholder="Från...">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="to">Till:</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="to" name="to" placeholder="Till...">
-                    </div>
-                </div>
-                <div class="row split">
-                    <div class="col-25">
-                        <label for="from">Tid:</label>
-                        <div class="col-75">
-                            <input type="time" id="time" name="time">
-                        </div>
+        </nav>
+        <section class="bookingconfirmation">
+            <div class="divLi">
+                <div class="centre">
 
-                    </div>
-                    <div class="col-25">
-                        <label for="from">Datum:</label>
-                        <div class="col-75">
-                            <input type="date" id="date" name="date">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="firstAvailable" name="firstAvailable" value="firstAvailable">
-                    <label for="firstAvailable">Första ledig tid</label>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="wheelchair" name="wheelchair" value="wheelchair">
-                    <label for="wheelchair">Rullstolsanpassning</label>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="visuallyImpaired" name="visuallyImpaired" value="visuallyImpaired">
-                    <label for="visuallyImpaired">Synnedsättning</label>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="fellowTraveller" name="fellowTraveller" value="fellowTraveller">
-                    <label for="fellowTraveller">Medresenär</label>
-                </div>
-
-                <div class="row">
-                    <input type="submit" value="Boka Resa">
-                </div>
-
-            </form>
+                    <img id="confirmIcon" src="images/icons8-checkmark-48.png" alt="">
+                    <h2>Tack för din bokning!</h2>
 
 
+                </div>
 
+
+                <p>Din bokning är nu genomförd och återfinns under “Dina Bokning” under “Mina Resor”.</p>
+                <p>Vid ändringar, meddela genast via ändra/avboka resa knappen under “Mina Sidor”.
+                </p>
+
+
+            </div>
+            <div class="centre, lefttext" id="myTripsLink">
+
+                <a href="myTrips.html"><img id="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></a>
+                <a href="myTrips.html">Mina resor</a>
+
+
+            </div>
         </section>
     </div>
     <footer>

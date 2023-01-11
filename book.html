@@ -10,28 +10,73 @@
 </head>
 
 <body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <header>
-        <div class="split">
-            <div class="left logo">
-                <p><a href="index.html">Härnösand Färdtjänst</a></p>
-            </div>
-            <div class="right menudiv">
-                <img class="search" src="images/icons8-search-30.png" alt="searchicon">
-                <img class="menu" src="images/icons8-menu-30.png" alt="hamburgarmeny">
+        <nav>
 
-            </div>
-        </div>
+
+            <div class="topnav" id="myTopnav">
+
+                <section class="headerbar">
+                    <div class="logoDiv">
+                        <a class="logo" href="index.html">Härnösand Färdtjänst</a>
+                    </div>
+                    <div class="search">
+                        <img class="search2" src="images/icons8-search-30.png" alt="searchicon">
+                    </div>
+                    <div class="hamburger">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </section>
+
+
+                <a class="profileMenu" href="myTrips.html">
+                    <div class="imageText">
+                        <div class="image">
+                            <img src="images/icons8-test-account-50.png" alt="Mina sidor">
+                        </div>
+                        <div class="text">
+                            <p> Martin Kjellgren</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="myTrips.html">Mina resor</a>
+                <a href="book.html">Boka resa</a>
+                <a href="info.html">Information</a>
+                <a href="contact.html">Kontakta oss</a>
+
+
+                <a class="logOut" href="index.html">
+                    <div class="imageText">
+                        <div class="image">
+                            <img id="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow">
+                        </div>
+                        <div class="text">
+                            <p> Logga ut</p>
+                        </div>
+                    </div>
+                </a>
+
+
+
+        </nav>
     </header>
+
+
+
     <section class="pageName">
         <h1>Boka resa</h1>
     </section>
     <div class="page">
-        <section class="goback">
+        <nav class="goback">
             <ul>
                 <li><a href="index.html">Startsida /</a></li>
                 <li><a href="book.html">Boka Resa</a></li>
             </ul>
-        </section>
+        </nav>
         <section class="book">
             <h2>Avresa</h2>
             <form action="backtrip.html">
@@ -83,7 +128,7 @@
                     <label for="fellowTraveller">Medresenär</label>
                 </div>
 
-                <div id="backtrip" class="row">
+                <div class="backtrip" class="row">
                     <input type="submit" value="Boka Återresa">
                 </div>
 
@@ -100,7 +145,7 @@
     </div>
     <footer>
         <div class="split">
-            <div class="split_left_footer">
+            <nav class="split_left_footer">
                 <div class="split">
                     <div class="split_left_arrow">
                         <ul>
@@ -123,12 +168,12 @@
                                 <h4><a href="contact.html">Kontakta oss</a></h4>
                             </li>
                             <li>
-                                <h4><a href="">Tillgänglighetsredogörelse</a></h4>
+                                <h4><a href="availability.html">Tillgänglighetsredogörelse</a></h4>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
             <div class="split_right_footer">
                 <h4>Kundservice</h4>
                 <p>Helgfri vardag klockan 7-20 <br> 010 - 00 00 00</p>
@@ -136,6 +181,17 @@
         </div>
 
     </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
