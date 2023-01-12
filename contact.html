@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="sv">
 
 <head>
@@ -7,42 +8,47 @@
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/11536f6220.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <ul>
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="menu.html">Meny</a></li>
-            <li><a href="book.html">Boka bord</a></li>
-            <li><a href="about.html">Om oss</a></li>
-        </ul>
-    </div>
-    <header class="navigation">
-        <div class="logo3">
-            <a href="index.html">
-                Härnösand Färdtjänst
-            </a>
-        </div>
-        <div class="navlink">
-            <a class="bookBtn" href="book.html">
-                <h3>Boka bord</h3>
-            </a>
-            <span id="menuBtn">&#9776;</span>
-        </div>
+    <header>
+        <nav>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="search">
+                <img src="images/icons8-search-30.png" alt="searchicon">
+            </div>
+            <a class="logo4" href="index.html">Härnösand Färdtjänst</a>
+            <ul>
+                <li class="searchList"><img src="images/icons8-search-30.png" alt="searchicon"></li>
+
+                <li> <a href="info.html">Information</a></li>
+                <li> <a href="contact.html">Kontakta oss</a></li>
+
+                <li class="logout">
+                    <img class="lock" src="images/icons8-lock-48.png" alt="låssymbol">
+                    <p class="lockText">Logga in</p>
+                </li>
+
+            </ul>
+        </nav>
+
     </header>
     <section class="pageName">
         <h1>Kontakta oss</h1>
     </section>
     <div class="page">
-        <section class="goback">
-            <ul>
-                <li><a href="index.html">Startsida /</a></li>
-                <li><a href="contact.html">Kontakta oss</a></li>
 
-            </ul>
-        </section>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Startsida</a></li>
+            <li>Kontakta oss</li>
+
+        </ul>
+
         <section class="contact">
             <h2>Ring oss:</h2>
             <a href="tel:010000000">010 00 00 00</a>
@@ -54,55 +60,59 @@
     <footer>
         <div class="split">
             <div class="split_left_footer">
-                <div class="split">
-                    <div class="split_left_arrow">
-                        <ul>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
+                <nav>
+                    <a href="myTrips.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Mina resor</p>
+                            </div>
+                        </div>
+                    </a>
 
-                        </ul>
-                    </div>
-                    <div class="split_right_arrow">
-                        <ul>
-                            <li>
-                                <h4><a href="myTrips.html">Mina resor</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="info.html">Information</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="contact.html">Kontakta oss</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="availability.html">Tillgänglighetsredogörelse</a></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    <a href="info.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="active" href="contact.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Kontakta oss</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="availability.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Tillgänglighetsredogörelse</p>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+
             </div>
             <div class="split_right_footer">
                 <h4>Kundservice</h4>
                 <p>Helgfri vardag klockan 7-20 <br> 010 - 00 00 00</p>
             </div>
         </div>
-        <script>
-            //När man klickar på menusymbol så öppnad menyn
-            var menuBtnEl = document.getElementById("menuBtn");
-            menuBtnEl.addEventListener("click", openNav);
 
-            /* Set the width of the side navigation to 100% and the left margin of the page content to 100% */
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "40%";
-            }
-            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-
-            }
-        </script>
     </footer>
+
 </body>
 
 </html>

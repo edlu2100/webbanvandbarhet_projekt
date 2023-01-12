@@ -7,32 +7,48 @@
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/11536f6220.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="split">
-            <div class="left logo">
-                <a href="index.html">Härnösand Färdtjänst</a>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="search">
+                <img src="images/icons8-search-30.png" alt="searchicon">
             </div>
-            <div class="right menudiv">
-                <img class="search" src="images/icons8-search-30.png" alt="searchicon">
-                <img class="menu" src="images/icons8-menu-30.png" alt="hamburgarmeny">
+            <a class="logo4" href="index.html">Härnösand Färdtjänst</a>
+            <ul>
+                <li class="searchList"><img src="images/icons8-search-30.png" alt="searchicon"></li>
+                <li> <a href="myTrips.html">Mina resor</a></li>
+                <li> <a class="active" href="book.html">Boka resa</a></li>
+                <li> <a href="info.html">Information</a></li>
+                <li> <a href="contact.html">Kontakta oss</a></li>
 
-            </div>
-        </div>
+                <li class="logout">
+                    <a href="index.html">Logga ut</a>
+                </li>
+
+            </ul>
+        </nav>
+
     </header>
     <section class="pageName">
         <h1>Boka Återresa</h1>
     </section>
     <div class="page">
-        <section class="goback">
-            <ul>
-                <li><a href="book.html">Startsida /</a></li>
-                <li><a href="book.html">Boka Resa /</a></li>
-                <li><a href="backtrip.html">Boka Återresa</a></li>
-            </ul>
-        </section>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Startsida</a></li>
+            <li>
+                <a href="book.html">Boka Resa</a>
+            </li>
+            <li>Boka Återresa</li>
+
+        </ul>
         <section class="book">
             <h2>Återresa</h2>
             <form action="confirm.html">
@@ -52,16 +68,16 @@
                         <input type="text" id="to" name="to" placeholder="Till...">
                     </div>
                 </div>
-                <div class="row split">
+                <div class="row splitbook">
                     <div class="col-25">
-                        <label for="from">Tid:</label>
+                        <label for="time">Tid:</label>
                         <div class="col-75">
                             <input type="time" id="time" name="time">
                         </div>
 
                     </div>
                     <div class="col-25">
-                        <label for="from">Datum:</label>
+                        <label for="date">Datum:</label>
                         <div class="col-75">
                             <input type="date" id="date" name="date">
                         </div>
@@ -97,33 +113,50 @@
     <footer>
         <div class="split">
             <div class="split_left_footer">
-                <div class="split">
-                    <div class="split_left_arrow">
-                        <ul>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
+                <nav>
+                    <a href="myTrips.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Mina resor</p>
+                            </div>
+                        </div>
+                    </a>
 
-                        </ul>
-                    </div>
-                    <div class="split_right_arrow">
-                        <ul>
-                            <li>
-                                <h4><a href="myTrips.html">Mina resor</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="info.html">Information</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="contact.html">Kontakta oss</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="availability.html">Tillgänglighetsredogörelse</a></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    <a href="info.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="contact.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Kontakta oss</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="availability.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Tillgänglighetsredogörelse</p>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+
             </div>
             <div class="split_right_footer">
                 <h4>Kundservice</h4>
@@ -132,6 +165,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>

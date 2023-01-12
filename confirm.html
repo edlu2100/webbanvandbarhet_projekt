@@ -7,137 +7,193 @@
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/11536f6220.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div id="brand"><a href="index.html">Härnösand Färdtjänst</a></div>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="search">
+                <img src="images/icons8-search-30.png" alt="searchicon">
+            </div>
+            <a class="logo4" href="index.html">Härnösand Färdtjänst</a>
             <ul>
-                <li><a href="">Martin Kjellberg</a></li>
-                <li><a href="">Mina resor</a></li>
-                <li><a href="">Boka resor</a></li>
-                <li><a href="">Information</a></li>
-                <li><a href="">Kontakta oss</a></li>
-                <li class="logOut"><a href="">Logga ut</a></li>
+                <li class="searchList"><img src="images/icons8-search-30.png" alt="searchicon"></li>
+                <li> <a href="myTrips.html">Mina resor</a></li>
+                <li>
+                    <a class="active" href="book.html">Boka resa</a>
+                </li>
+                <li> <a href="info.html">Information</a></li>
+                <li> <a href="contact.html">Kontakta oss</a></li>
+
+                <li class="logout">
+                    <a href="index.html">Logga ut</a>
+                </li>
+
             </ul>
         </nav>
-        <div class="hamburger-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="">Martin Kjellberg</a></li>
-                <li><a href="">Mina resor</a></li>
-                <li><a href="">Boka resor</a></li>
-                <li><a href="">Information</a></li>
-                <li><a href="">Kontakta oss</a></li>
-                <li class="logOut"><a href="">Logga ut</a></li>
-            </ul>
-        </div>
+
     </header>
     <section class="pageName">
         <h1>Bekräfta Bokning</h1>
     </section>
     <div class="page">
-        <section class="goback">
-            <ul>
-                <li><a href="index.html">Startsida /</a></li>
-                <li><a href="book.html">Boka Resa /</a></li>
-                <li><a href="confirm.html">Bekräfta</a></li>
-            </ul>
-        </section>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="book.html">Boka Resa</a></li>
+            <li>Bekräfta Bokning</li>
+
+        </ul>
+
         <section class="confirm">
             <h2>Bekräfta Bokning</h2>
             <h3>Stämmer följande bokning?</h3>
-            <div>
 
 
-                <div class="split">
-                    <div id="split_confirm_left">
-                        <ul>
-                            <div class="firstLeft">
-                                <li>
-                                    <p><b>Till:</b> Bergsgatan 5</p>
-                                </li>
-                                <li>
-                                    <p><b>Från:</b> Björkvägen 323</p>
-                                </li>
-                            </div>
-                            <div class="secondLeft">
-                                <li>
-                                    <p><b>Till:</b> Björkvägen 323</p>
-                                </li>
-                                <li>
-                                    <p><b>Från:</b> Bergsgatan 5 </p>
-                                </li>
-                            </div>
 
-                        </ul>
-                    </div>
-                    <div id="split_confirm_right">
-                        <ul>
-                            <div class="divLi">
-                                <li>
-                                    <img src="images/icons8-clock-24.png" alt="Klocka">
-                                    <p>17.00</p>
-                                </li>
-                                <li class="firstLiRight">
-                                    <img src="images/icons8-calendar-24.png" alt="Kalender">
-                                    <p>20 Dec</p>
-                                </li>
-                            </div>
-                            <div class="divLi">
-                                <li>
-                                    <img src="images/icons8-clock-24.png" alt="Klocka">
-                                    <p>22.15</p>
-                                </li>
-                                <li>
-                                    <img src="images/icons8-calendar-24.png" alt="Kalender">
-                                    <p>20 Dec</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
+            <div class="splitConfirm">
+                <div class="split_confirm_left">
+                    <ul>
+                        <li>
+                            <p><b>Från:</b> Bergsgatan 5</p>
+                        </li>
+
+                        <li>
+                            <p><b>Till:</b> Björkvägen 323</p>
+                        </li>
+
+                    </ul>
+
                 </div>
-                <div id="button">
-                    <a href="book.html"><button id="noButton"><img src="images/icons8-close-30.png" alt="kryss"> Nej</button></a>
-                    <a href="bookingconfirmation.html"><button id="yesButton"><img src="images/icons8-done-30.png" alt="bock">Ja</button></a>
+                <div class="split_confirm_right">
+                    <ul>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-clock-24.png" alt="Klocka">
+                                </div>
+                                <div class="text">
+                                    <p> 18.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-calendar-24.png" alt="Kalender">
+                                </div>
+                                <div class="text">
+                                    <p>20Dec</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
+
+            <div id="splitConfirm2" class="splitConfirm">
+                <div class="split_confirm_left">
+                    <ul>
+
+                        <li>
+                            <p><b>Från:</b> Björkvägen 323</p>
+                        </li>
+                        <li>
+                            <p><b>Till:</b> Bergsgatan 5</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="split_confirm_right">
+                    <ul>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-clock-24.png" alt="Klocka">
+                                </div>
+                                <div class="text">
+                                    <p> 22.15</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-calendar-24.png" alt="Kalender">
+                                </div>
+                                <div class="text">
+                                    <p>20Dec</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="button">
+                <form action="book.html">
+                    <button id="noButton"><img src="images/icons8-close-30.png" alt="kryss">Nej</button>
+                </form>
+                <form action="bookingconfirmation.html">
+                    <button id="yesButton"><img src="images/icons8-done-30.png" alt="bock">Ja</button>
+                </form>
+            </div>
+
+
         </section>
     </div>
     <footer>
         <div class="split">
             <div class="split_left_footer">
-                <div class="split">
-                    <div class="split_left_arrow">
-                        <ul>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
-                            <li><img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow"></li>
+                <nav>
+                    <a href="myTrips.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Mina resor</p>
+                            </div>
+                        </div>
+                    </a>
 
-                        </ul>
-                    </div>
-                    <div class="split_right_arrow">
-                        <ul>
-                            <li>
-                                <h4><a href="myTrips.html">Mina resor</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="info.html">Information</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="contact.html">Kontakta oss</a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="availability.html">Tillgänglighetsredogörelse</a></h4>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    <a href="info.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="contact.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Kontakta oss</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="availability.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Tillgänglighetsredogörelse</p>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+
             </div>
             <div class="split_right_footer">
                 <h4>Kundservice</h4>
@@ -146,6 +202,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>

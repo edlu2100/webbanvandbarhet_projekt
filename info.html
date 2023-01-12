@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="sv">
 
 <head>
@@ -13,6 +14,7 @@
 <body>
     <header>
         <nav>
+
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
@@ -22,14 +24,14 @@
             </div>
             <a class="logo4" href="index.html">Härnösand Färdtjänst</a>
             <ul>
-                <li class="test"><img src="images/icons8-search-30.png" alt="searchicon"></li>
-                <li> <a href="myTrips.html">Mina resor</a></li>
-                <li> <a href="book.html">Boka resa</a></li>
-                <li> <a class="active" href="info.html">Information</a></li>
+                <li class="searchList"><img src="images/icons8-search-30.png" alt="searchicon"></li>
+
+                <li> <a href="info.html">Information</a></li>
                 <li> <a href="contact.html">Kontakta oss</a></li>
 
                 <li class="logout">
-                    <a href="index.html">Logga ut</a>
+                    <img class="lock" src="images/icons8-lock-48.png" alt="låssymbol">
+                    <p class="lockText">Logga in</p>
                 </li>
 
             </ul>
@@ -40,8 +42,9 @@
         <h1>Information</h1>
     </section>
     <div class="page">
+
         <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Startsida</a></li>
             <li>Information</li>
 
         </ul>
@@ -97,7 +100,7 @@
                     <a href="myTrips.html">
                         <div class="imageTextFooter">
                             <div class="">
-                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
                             </div>
                             <div class="">
                                 <p> Mina resor</p>
@@ -105,10 +108,10 @@
                         </div>
                     </a>
 
-                    <a href="info.html">
+                    <a class="active" href="info.html">
                         <div class="imageTextFooter">
                             <div class="">
-                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
                             </div>
                             <div class="">
                                 <p> Information</p>
@@ -118,7 +121,7 @@
                     <a href="contact.html">
                         <div class="imageTextFooter">
                             <div class="">
-                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
                             </div>
                             <div class="">
                                 <p> Kontakta oss</p>
@@ -128,7 +131,7 @@
                     <a href="availability.html">
                         <div class="imageTextFooter">
                             <div class="">
-                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="arrow">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
                             </div>
                             <div class="">
                                 <p> Tillgänglighetsredogörelse</p>
@@ -145,11 +148,6 @@
         </div>
 
     </footer>
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
 
 </body>
 
