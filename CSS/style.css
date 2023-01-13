@@ -74,7 +74,7 @@
                 
                 .page {
                     background-color: rgba(227, 227, 227, 1);
-                    min-height: 72vh;
+                    min-height: 80vh;
                 }
                 /*delar headern i två delar*/
                 
@@ -839,7 +839,7 @@
                 }
                 
                 .form1 {
-                    background-color: rgb(115, 137, 115);
+                    background-color: rgb(237, 222, 93);
                 }
                 
                 .form2 {
