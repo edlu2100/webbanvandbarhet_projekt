@@ -15,8 +15,8 @@
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
+                <i class="fas fa-bars"></i>
+            </label>
             <div class="search">
                 <img src="images/icons8-search-30.png" alt="searchicon">
             </div>
@@ -24,7 +24,9 @@
             <ul>
                 <li class="searchList"><img src="images/icons8-search-30.png" alt="searchicon"></li>
                 <li> <a href="myTrips.html">Mina resor</a></li>
-                <li> <a class="active" href="book.html">Boka resa</a></li>
+                <li>
+                    <a class="active" href="book.html">Boka resa</a>
+                </li>
                 <li> <a href="info.html">Information</a></li>
                 <li> <a href="contact.html">Kontakta oss</a></li>
 
@@ -37,77 +39,110 @@
 
     </header>
     <section class="pageName">
-        <h1>Boka Resa</h1>
+        <h1>Avboka resa</h1>
     </section>
     <div class="page">
 
         <ul class="breadcrumb">
             <li><a href="index.html">Startsida</a></li>
-            <li>Boka Resa</li>
+
+            <li>Avboka</li>
 
         </ul>
-        <section class="book">
-            <h2>Avresa</h2>
-            <form action="backtrip.html">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="from">Från:</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="from" name="from" placeholder="Från...">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="to">Till:</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="to" name="to" placeholder="Till...">
-                    </div>
-                </div>
-                <div class="row splitbook">
-                    <div class="col-25">
-                        <label for="from">Tid:</label>
-                        <div class="col-75">
-                            <input type="time" id="time" name="time">
-                        </div>
 
-                    </div>
-                    <div class="col-25">
-                        <label for="from">Datum:</label>
-                        <div class="col-75">
-                            <input type="date" id="date" name="date">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="firstAvailable" name="firstAvailable" value="firstAvailable">
-                    <label for="firstAvailable">Första ledig tid</label>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="wheelchair" name="wheelchair" value="wheelchair">
-                    <label for="wheelchair">Rullstolsanpassning</label>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="visuallyImpaired" name="visuallyImpaired" value="visuallyImpaired">
-                    <label for="visuallyImpaired">Synnedsättning</label>
-                </div>
-                <div class="row">
-                    <input type="checkbox" id="fellowTraveller" name="fellowTraveller" value="fellowTraveller">
-                    <label for="fellowTraveller">Medresenär</label>
-                </div>
-
-                <div class="backtrip row">
-                    <input type="submit" value="Boka Återresa">
-                </div>
+        <section class="confirm">
+            <h2>Bekräfta Avbokning</h2>
+            <h3>Är du säker att du vill avboka följande bokning?</h3>
 
 
-            </form>
-            <form action="confirm.html">
-                <div class="row">
-                    <input type="submit" value="Boka Resa">
+
+            <div class="splitConfirm">
+                <div class="split_confirm_left">
+                    <ul>
+                        <li>
+                            <p><b>Från:</b> Bergsgatan 5</p>
+                        </li>
+
+                        <li>
+                            <p><b>Till:</b> Rosenbäcksrosen 161</p>
+                        </li>
+
+                    </ul>
+
                 </div>
-            </form>
+                <div class="split_confirm_right">
+                    <ul>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-clock-24.png" alt="Klocka">
+                                </div>
+                                <div class="text">
+                                    <p> 07.30</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-calendar-24.png" alt="Kalender">
+                                </div>
+                                <div class="text">
+                                    <p>20Dec</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="splitConfirm2" class="splitConfirm">
+                <div class="split_confirm_left">
+                    <ul>
+
+                        <li>
+                            <p><b>Från:</b> Rosenbäcksrosen 161</p>
+                        </li>
+                        <li>
+                            <p><b>Till:</b> Bergsgatan 5</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="split_confirm_right">
+                    <ul>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-clock-24.png" alt="Klocka">
+                                </div>
+                                <div class="text">
+                                    <p> 18.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imageText">
+                                <div class="image">
+                                    <img src="images/icons8-calendar-24.png" alt="Kalender">
+                                </div>
+                                <div class="text">
+                                    <p>20Dec</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="button">
+                <form action="myTrips.html">
+                    <button id="noButton"><img src="images/icons8-close-30.png" alt="kryss">Nej</button>
+                </form>
+                <form action="bookingconfirmation1.html">
+                    <button id="yesButton"><img src="images/icons8-done-30.png" alt="bock">Ja</button>
+                </form>
+            </div>
 
 
         </section>

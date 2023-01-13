@@ -801,17 +801,6 @@
                     flex: 1 0 0;
                 }
                 
-                .trippCard button {
-                    padding: 0.5em;
-                    font-size: 1em;
-                    background-color: #E53E3E;
-                    border-radius: 7px;
-                    position: absolute;
-                    margin-left: 1em;
-                    bottom: 0;
-                    margin-bottom: 1em;
-                }
-                
                 #makeRepeated {
                     width: 60%;
                     padding: 1em 0 1em 0;
@@ -833,7 +822,7 @@
                 }
                 
                 .padding {
-                    padding-bottom: 5em;
+                    padding-bottom: 1em;
                 }
                 
                 .trippCardBottom ul {
@@ -841,14 +830,20 @@
                     margin-top: 1em;
                 }
                 
-                .trippCardBottom button {
+                .trippCardBottom button,
+                .trippCard button {
                     padding: 0.5em;
                     font-size: 1em;
-                    background-color: #E53E3E;
                     border-radius: 7px;
-                    margin-left: 1em;
-                    bottom: 0;
-                    margin-bottom: 1em;
+                    margin: 0 1em 1em;
+                }
+                
+                .form1 {
+                    background-color: rgb(115, 137, 115);
+                }
+                
+                .form2 {
+                    background-color: #E53E3E;
                 }
                 /*design ipad*/
                 
@@ -866,51 +861,16 @@
                         margin-top: 2em;
                         width: 100%;
                     }
-                    .returnKlock {
-                        margin-top: 4.5em;
-                    }
-                    /*resor destinationer*/
-                    .split_trips_left {
-                        flex: 8 0 0;
-                    }
-                    /*tid för resa höger sida*/
-                    .split_trips_right {
-                        flex: 1 0 0;
-                    }
                     #makeRepeated {
                         width: 60%;
                     }
                 }
                 
-                #line {
+                .buttontrippcard {
+                    width: 100%;
+                    margin-inline: auto;
                     display: flex;
-                    bottom: 0;
-                    position: absolute;
-                }
-                
-                #line1 {
-                    flex: 8 0 0;
-                }
-                
-                #line2 {
-                    flex: 1 0 0;
-                    margin-left: 3em;
-                    margin-top: 0.5em;
-                    width: 10%;
-                    height: 10%;
-                }
-                
-                #line3 {
-                    flex: 1 0 3;
-                    margin-top: 0.5em;
-                    font-size: 1em;
-                }
-                /*design ipad*/
-                
-                @media screen and (min-width: 600px) {
-                    #line3 {
-                        margin-top: 0;
-                    }
+                    justify-content: space-between;
                 }
                 
                 .divLiTrips {

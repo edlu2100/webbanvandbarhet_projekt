@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 
 <head>
@@ -14,24 +13,23 @@
 <body>
     <header>
         <nav>
-
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
+                        <i class="fas fa-bars"></i>
+                    </label>
             <div class="search">
                 <img src="images/icons8-search-30.png" alt="searchicon">
             </div>
             <a class="logo4" href="index.html">Härnösand Färdtjänst</a>
             <ul>
                 <li class="searchList"><img src="images/icons8-search-30.png" alt="searchicon"></li>
-
+                <li> <a href="myTrips.html">Mina resor</a></li>
+                <li> <a class="active" href="book.html">Boka resa</a></li>
                 <li> <a href="info.html">Information</a></li>
                 <li> <a href="contact.html">Kontakta oss</a></li>
 
                 <li class="logout">
-                    <img class="lock" src="images/icons8-lock-48.png" alt="låssymbol">
-                    <p class="lockText">Logga in</p>
+                    <a href="index.html">Logga ut</a>
                 </li>
 
             </ul>
@@ -39,45 +37,78 @@
 
     </header>
     <section class="pageName">
-        <h1>Logga In</h1>
+        <h1>Ändra Resa</h1>
     </section>
     <div class="page">
 
         <ul class="breadcrumb">
             <li><a href="index.html">Startsida</a></li>
-            <li>Logga In</li>
+            <li>Ändra Resa</li>
 
         </ul>
-        <section class="login">
-
-            <h2>Logga in med Personlig Kod</h2>
-
-
-
-            <form action="book.html">
+        <section class="book">
+            <h2>Avresa</h2>
+            <form action="changebacktrip.html">
                 <div class="row">
                     <div class="col-25">
-                        <label for="customerNumber">Kundnummer:</label>
+                        <label for="from">Från:</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="customerNumber" name="customerNumber" placeholder="Kundnummer">
+                        <input type="text" id="from" name="from" placeholder="Bergsgatan 5">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="password">Lösenord</label>
+                        <label for="to">Till:</label>
                     </div>
                     <div class="col-75">
-                        <input type="password" id="password" name="password" placeholder="Lösenord">
+                        <input type="text" id="to" name="to" placeholder="Björkvägen 323">
                     </div>
                 </div>
+                <div class="row splitbook">
+                    <div class="col-25">
+                        <label for="from">Tid:</label>
+                        <div class="col-75">
+                            <input type="time" id="time" name="time">
+                        </div>
 
+                    </div>
+                    <div class="col-25">
+                        <label for="from">Datum:</label>
+                        <div class="col-75">
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
-                    <input type="submit" value="Logga in">
+                    <input type="checkbox" id="firstAvailable" name="firstAvailable" value="firstAvailable">
+                    <label for="firstAvailable">Första ledig tid</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="wheelchair" name="wheelchair" value="wheelchair">
+                    <label for="wheelchair">Rullstolsanpassning</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="visuallyImpaired" name="visuallyImpaired" value="visuallyImpaired">
+                    <label for="visuallyImpaired">Synnedsättning</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="fellowTraveller" name="fellowTraveller" value="fellowTraveller">
+                    <label for="fellowTraveller">Medresenär</label>
+                </div>
+
+                <div class="backtrip row">
+                    <input type="submit" value="Ändra Återresa">
+                </div>
+
+
+            </form>
+            <form action="confirm3.html">
+                <div class="row">
+                    <input type="submit" value="Spara Ändring">
                 </div>
             </form>
-            <h3>Har du glömt din personliga kod?</h3>
-            <p>Om du har problem att logga in eller har glömt din personliga kod kan du få hjälp genom att kontakta Färdtjänstens kundservice.</p>
+
 
         </section>
     </div>
@@ -85,7 +116,16 @@
         <div class="split">
             <div class="split_left_footer">
                 <nav>
-
+                    <a href="myTrips.html">
+                        <div class="imageTextFooter">
+                            <div class="">
+                                <img class="arrow" src="images/icons8-circled-down-left-24.png" alt="pil">
+                            </div>
+                            <div class="">
+                                <p> Mina resor</p>
+                            </div>
+                        </div>
+                    </a>
 
                     <a href="info.html">
                         <div class="imageTextFooter">
