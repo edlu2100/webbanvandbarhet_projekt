@@ -415,7 +415,7 @@
                 /*inställningar för chechboxes*/
                 
                 input[type=checkbox] {
-                    margin-bottom: 1.3em;
+                    margin-bottom: 1.5em;
                     width: 1em;
                     height: 1em;
                 }
@@ -949,7 +949,7 @@
                 a.active,
                 a:hover {
                     transition: .5s;
-                    color: white;
+                    color: #ffffff;
                 }
                 
                 .checkbtn {
@@ -1023,7 +1023,6 @@
                     a:hover,
                     a.active {
                         background-color: rgba(205, 205, 205, 1);
-                        color: white;
                     }
                     #check:checked~ul {
                         left: 0;
@@ -1080,11 +1079,11 @@
                 }
                 
                 ul.breadcrumb li a {
-                    color: #02A3E8;
+                    color: #01447e;
                     text-decoration: none;
                 }
                 
                 ul.breadcrumb li a:hover {
-                    color: #01447e;
+                    color: #012749;
                     text-decoration: underline;
                 }
