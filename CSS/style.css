@@ -32,7 +32,7 @@
                 @media screen and (min-width: 600px) {
                     p {
                         line-height: 40px;
-                        letter-spacing: 2px;
+                        letter-spacing: 1.5px;
                     }
                 }
                 /*design dator*/
@@ -41,7 +41,7 @@
                     p {
                         font-size: 1.3em;
                         line-height: 40px;
-                        letter-spacing: 2px;
+                        letter-spacing: 1.5px;
                     }
                 }
                 /*inställningar för sidrubrik*/
@@ -212,6 +212,7 @@
                     margin-bottom: 2em;
                     font-size: 0.85em;
                     background-color: #02A3E8;
+                    cursor: pointer;
                     border-radius: 5px;
                 }
                 /*design ipad*/
@@ -317,8 +318,17 @@
                     border-radius: 4px;
                     cursor: pointer;
                     float: right;
-                    margin-bottom: 2em;
+                    margin-bottom: 3em;
                     font-size: 0.9em;
+                }
+                
+                input[type=submit]:hover {
+                    background-color: #50c0ef;
+                    color: black;
+                }
+                
+                i {
+                    margin: 0.2em;
                 }
                 /*design ipad*/
                 
@@ -415,20 +425,31 @@
                 /*inställningar för chechboxes*/
                 
                 input[type=checkbox] {
-                    margin-bottom: 1.5em;
+                    margin-top: 2.5em;
                     width: 1em;
                     height: 1em;
+                    font-size: 1.1em;
+                    text-align: center;
+                }
+                
+                .row label {
+                    font-size: 1.2em;
                 }
                 /*design ipad*/
                 
                 @media screen and (min-width: 600px) {
                     input[type=checkbox] {
-                        margin-bottom: 2em;
+                        margin-top: 3em;
                     }
                 }
                 
                 .backtrip {
                     margin-top: 1em;
+                }
+                
+                .backtrip input {
+                    background-color: #005D95;
+                    color: white;
                 }
                 
                 #to {
@@ -682,7 +703,7 @@
                 .contact h2,
                 h3 {
                     font-size: 1.1em;
-                    margin-bottom: 0.7em;
+                    margin-bottom: 0.2em;
                 }
                 /*p-element på kontakta oss sidan*/
                 
@@ -732,9 +753,8 @@
                 
                 .info h2,
                 h3 {
-                    margin-top: 1.5em;
-                    margin-bottom: 0.7em;
-                    font-size: 1.2em;
+                    margin-top: 2em;
+                    font-size: 1.5em;
                 }
                 /*sätter listorna smalare än texten*/
                 
@@ -755,6 +775,7 @@
                 
                 .myTrips {
                     text-align: center;
+                    padding-bottom: 3em;
                 }
                 
                 .myTrips h2 {
@@ -905,6 +926,7 @@
                 .text p {
                     text-align: center;
                 }
+                /*navigation*/
                 
                 nav {
                     list-style: none;
@@ -914,6 +936,7 @@
                 nav a {
                     text-decoration: none;
                 }
+                /*loggan*/
                 
                 .logo4 {
                     font-size: 1.7em;
@@ -931,6 +954,7 @@
                     line-height: 85px;
                     margin: 0 5px;
                 }
+                /*navigationen för stora skärmar*/
                 
                 @media screen and (min-width: 1150px) {
                     nav ul li {
@@ -945,12 +969,14 @@
                     border-radius: 3px;
                     text-transform: uppercase;
                 }
+                /*när musen är över lämkar i menyn*/
                 
                 a.active,
                 a:hover {
                     transition: .5s;
                     color: #ffffff;
                 }
+                /*sätter ut hamburgarmenyn*/
                 
                 .checkbtn {
                     font-size: 30px;
@@ -966,17 +992,20 @@
                 .logout a {
                     text-decoration: underline;
                 }
+                /*för stora skärmar*/
                 
                 @media screen and (max-width: 940px) {
                     .logo4 {
                         font-size: 1.7em;
                     }
+                    /*menyalternativens storlek*/
                     nav ul li a {
                         font-size: 1em;
                     }
                     .chechbtn {
                         display: block;
                     }
+                    /*sätter menyn på sidan om tills man trycker på knappen*/
                     nav ul {
                         position: fixed;
                         z-index: 999;
@@ -993,6 +1022,7 @@
                         margin: 5vh 0;
                         line-height: 30px;
                     }
+                    /*för in menyn*/
                     #check:checked~ul {
                         left: 0;
                     }
@@ -1002,6 +1032,7 @@
                     .chechbtn {
                         display: block;
                     }
+                    /*sätter menyn på sidan om tills man trycker på knappen*/
                     nav ul {
                         position: fixed;
                         z-index: 999;
@@ -1020,14 +1051,17 @@
                         font-size: 1.2em;
                         margin: 2em;
                     }
+                    /*när musen är över lämkar i menyn*/
                     a:hover,
                     a.active {
                         background-color: rgba(205, 205, 205, 1);
                     }
+                    /*för in menyn*/
                     #check:checked~ul {
                         left: 0;
                     }
                 }
+                /*searchikonens placering*/
                 
                 .search {
                     line-height: 105px;
